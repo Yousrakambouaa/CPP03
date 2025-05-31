@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 01:24:34 by ykamboua          #+#    #+#             */
-/*   Updated: 2025/05/29 20:49:28 by ykamboua         ###   ########.fr       */
+/*   Updated: 2025/05/31 20:44:32 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,15 @@
 int	main()
 {
 	
-	// ClapTrap bmo("bmo");
-
-	// bmo.attack("jack");
-	// bmo.takeDamage(2);
-	// bmo.beRepaired(1);
-
-
-	ScavTrap	serena("serena");
-	serena.attack("ex");
-	serena.beRepaired(12);
-	serena.takeDamage(14);
-	serena.guardGate();
+	{	
+		ScavTrap	serena("serena");
+		serena.attack("ex");
+		serena.beRepaired(12);
+		serena.takeDamage(14);
+		serena.guardGate();
+	}
 
 	std::cout << "=========================================================" <<  std::endl;
-
 
 	FragTrap	lex("lex");
 	lex.attack("lex000000001");

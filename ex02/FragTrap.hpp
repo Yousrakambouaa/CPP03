@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 20:31:29 by ykamboua          #+#    #+#             */
-/*   Updated: 2025/05/29 20:39:43 by ykamboua         ###   ########.fr       */
+/*   Updated: 2025/05/31 18:46:50 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class	FragTrap : public ClapTrap
 		~FragTrap();
 
 		void	attack(const std::string& target);
-		void	highFivesGuys() const;
+		void	highFivesGuys();
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ykamboua <ykamboua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 20:31:19 by ykamboua          #+#    #+#             */
-/*   Updated: 2025/05/29 20:41:10 by ykamboua         ###   ########.fr       */
+/*   Updated: 2025/05/31 20:12:13 by ykamboua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,24 +49,24 @@ FragTrap& FragTrap::operator=(const FragTrap& other)
 
 FragTrap::~FragTrap()
 {
-    std::cout << "FragTrap destrooyed" << std::endl;
+    std::cout << "FragTrap " << name << " destrooyed" << std::endl;
 }
 
 void FragTrap::attack(const std::string& target)
 {
 	if (hit_points > 0 && this->energy_points > 0)
 	{
-		std::cout << "FragTrap " << name << " attacks " << target << ", causing " << attack_damage  << " points of damage!" << std::endl;
 		energy_points--;
+		std::cout << "FragTrap " << name << " attacks " << target << ", energy points now : " << energy_points << std::endl;
 		return;
 	}
-	std::cout << "can't attack " << std::endl;
+	std::cout << "FragTrap " << name << " can't attack " << std::endl;
 }
 
 
-void FragTrap::highFivesGuys() const
+void FragTrap::highFivesGuys()
 {
-	std::cout << "FragTrap " << name << " says: high five anyone" << std::endl;
+	std::cout << "FragTrap " << name << " says: high five guyzzzzz" << std::endl;
 }
 
 
